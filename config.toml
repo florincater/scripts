@@ -1,0 +1,6 @@
+[server]
+maxUploadSize = 1000  # Pour les fichiers modèles volumineux
+enableCORS = false
+
+[runner]
+magicEnabled = false
