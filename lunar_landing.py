@@ -10,6 +10,11 @@ from PIL import Image
 from ANN import ANN  # Après avoir corrigé ANN.py
 disable_env_checker=True  # Désactive les vérifications problématiques
 autoreset=True           # Gère mieux les réinitialisations
+try:
+    import Box2D
+    st.success("Box2D installé avec succès!")
+except ImportError:
+    st.error("Échec de l'installation de Box2D - vérifiez les logs")
 
 @st.cache_resource
 def load_model():
