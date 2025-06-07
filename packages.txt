@@ -1,2 +1,0 @@
-python3-torch
-python3-gym
